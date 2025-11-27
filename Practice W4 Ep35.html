@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #45cc8d;
+        }
+        form {
+            float: center;
+            background-color: white;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+        }
+        input[type="submit"], input[type="email"], input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            margin: 1px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4fcb83;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a071;
+        }
+        </style>
+</head>
+<body>
+    <form action="/submit_registration" method="post" autocomplete="on">
+        <img src="./Sabzlearn.jpg" alt="Logo" style="display: block; margin-left: auto; margin-right: auto; width: 100px; height: 100px;"><br>
+        <label for="username"></label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required minlength="3"><br><br>
+
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password"></label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+
+        <label for="repeat_password"></label><br>
+        <input type="password" id="repeat_password" name="repeat_password" placeholder="Repeat your password" required minlength="6"><br><br>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms"> I agree to the Terms and Conditions of <a href="#" target="_blank">this website</a></label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
